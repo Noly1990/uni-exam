@@ -1,0 +1,12 @@
+<template name="0e802e12">
+  <view class="_view data-v-e20cd026 content">
+    <view class="_view data-v-e20cd026">
+      <view class="_view data-v-e20cd026 hint">
+        <text class="_text data-v-e20cd026 title">忘记密码请联系各班老师修改</text>
+      </view>
+    </view>
+    <view class="_view data-v-e20cd026 btn-row">
+      <button type="primary" class="_button data-v-e20cd026 primary" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">确定</button>
+    </view>
+  </view>
+</template>
