@@ -1,0 +1,57 @@
+
+.content.data-v-729364de {
+  background-color: #DEDEDE;
+}
+.score-scroll-box.data-v-729364de {
+  height: 600rpx;
+  background-color: #EEEEEE;
+}
+.user-info.data-v-729364de {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.user-info-item.data-v-729364de:first-of-type {
+  margin-top: 10rpx;
+}
+.user-info-item.data-v-729364de {
+  height: 90rpx;
+  background-color: #FAFAFA;
+  margin-bottom: 10rpx;
+  line-height: 90rpx;
+  padding-left: 40rpx;
+  font-size: 26rpx;
+}
+.sex-img.data-v-729364de {
+  display: block;
+  height: 50rpx;
+  width: 50rpx;
+  padding: 20rpx;
+  float: right;
+}
+.score-item-box.data-v-729364de {
+  margin: 20rpx;
+  font-size: 24rpx;
+  padding: 10rpx 15rpx;
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+}
+.base-text.data-v-729364de {
+  position: relative;
+  top: -30rpx;
+  font-weight: bold;
+  float: right;
+}
+.pass-text.data-v-729364de {
+  color: #71FF73;
+}
+.fail-text.data-v-729364de {
+  color: #FF5959;
+}
+.time-text.data-v-729364de {
+  color: #C8C7CC;
+}

@@ -1,0 +1,123 @@
+
+.practice-box {
+  position: relative;
+  width: 100%;
+}
+.controller-left {
+  position: fixed;
+  left: 10rpx;
+  top: 65%;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #DDD;
+  border-radius: 50%;
+}
+.controller-right {
+  position: fixed;
+  right: 10rpx;
+  top: 65%;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #DDD;
+  border-radius: 50%;
+}
+.left-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+.right-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+.question-box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx;
+  margin-bottom: 120rpx;
+}
+.question-title {
+  min-height: 100rpx;
+}
+.title-index {
+  font-weight: bold;
+}
+.answer-item {
+  font-size: 22 px;
+  background-color: #EEE;
+  padding: 20rpx;
+  margin: 20rpx;
+  border-radius: 15rpx;
+}
+.answer-blue {
+  background-color: #70D7FF;
+}
+.answer-green {
+  background-color: #71FF73;
+}
+.answer-red {
+  background-color: #FF5959;
+}
+.bottom-view-box.data-v-dc11c714 {
+  width: 750rpx;
+  height: 600rpx;
+  position: fixed;
+  bottom: -510rpx;
+  -webkit-transition: bottom 0.3s;
+  transition: bottom 0.3s;
+  z-index: 10;
+  background-color: #EEE;
+}
+.bottom-view-header.data-v-dc11c714 {
+  width: 750rpx;
+  height: 90rpx;
+  background-color: #E4E4E4;
+  border-top: 1rpx solid #CCC;
+  border-bottom: 1rpx solid #CCC;
+}
+.bottom-view-header-right.data-v-dc11c714 {
+  float: right;
+  width: 90rpx;
+  height: 90rpx;
+}
+.bottom-view-header-right-icon.data-v-dc11c714 {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 15rpx;
+}
+.bottom-view-header-right-text.data-v-dc11c714 {
+  text-align: center;
+  display: block;
+  float: right;
+  width: 120rpx;
+  line-height: 90rpx;
+  font-size: 24rpx;
+}
+.bottom-view-content.data-v-dc11c714 {
+  margin: 0 25rpx;
+}
+.view-open.data-v-dc11c714 {
+  bottom: 0rpx;
+}
+.scroll-item.data-v-dc11c714 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  float: left;
+}
+.default-item.data-v-dc11c714 {
+  background-color: #DDDDDD;
+}
+.done-item.data-v-dc11c714 {
+  background-color: #70D7FF;
+}
+.right-item.data-v-dc11c714 {
+  background-color: #71FF73;
+}
+.wrong-item.data-v-dc11c714 {
+  background-color: #FF5959;
+}
+.scroll-box.data-v-dc11c714 {
+  height: 510rpx;
+}

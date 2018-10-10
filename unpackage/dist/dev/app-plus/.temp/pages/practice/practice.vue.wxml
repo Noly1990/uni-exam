@@ -1,0 +1,14 @@
+<import src="/components/Question.vue.wxml" />
+<import src="/components/BottomView.vue.wxml" />
+<template name="dba49ea0">
+  <view class="_view data-v-5cf95f91 practice-box">
+    <template bindright-next="handleProxy" scene="practice" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="454f5018"></template>
+    <view bindtap="handleProxy" class="_view data-v-5cf95f91 controller-left" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+      <image class="_image data-v-5cf95f91 left-img" src="../../static/img/left.png" mode="aspectFit"></image>
+    </view>
+    <view bindtap="handleProxy" class="_view data-v-5cf95f91 controller-right" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+      <image class="_image data-v-5cf95f91 right-img" src="../../static/img/right.png" mode="aspectFit"></image>
+    </view>
+    <template bindreach-bottom="handleProxy" bindindex-click="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="1fe6bc22"></template>
+  </view>
+</template>

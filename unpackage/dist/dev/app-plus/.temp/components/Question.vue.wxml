@@ -1,0 +1,12 @@
+<template name="454f5018">
+  <view class="_view data-v-6a389528 question-box">
+    <view class="_view data-v-6a389528 question-title">
+      <text class="_text data-v-6a389528">{{questionObj.qtitle}}</text>
+    </view>
+    <view class="_view data-v-6a389528 answer-box">
+      <view bindtap="handleProxy" class="_view data-v-6a389528 answer-item {{item.className}}" wx:key="item.index" key="{{item.index}}" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{optionArr}}" wx:for-index="index" wx:for-item="item">
+        <view wx:if="{{item.show}}" class="_view data-v-6a389528"> {{item.face}}:{{item.title}} </view>
+      </view>
+    </view>
+  </view>
+</template>

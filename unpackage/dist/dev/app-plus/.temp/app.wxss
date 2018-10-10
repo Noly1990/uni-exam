@@ -17,7 +17,6 @@ page {
   -webkit-flex-direction: column;
   flex-direction: column;
   background-color: #1d4e92;
-  padding: 20rpx;
 }
 .input-group {
   background-color: #ffffff;

@@ -1,83 +1,111 @@
 <template>
-    <view class="content">
-        <view v-if="hasLogin" class="hello">
-            <view class="title">
-                您好 {{userName}}，您已成功登录。
-            </view>
-            <view class="ul">
-                <view>这是 uni-app 带登录模板的示例App首页。</view>
-                <view>在 “我的” 中点击 “退出” 可以 “注销当前账户”</view>
-            </view>
-        </view>
-        <view v-if="!hasLogin" class="hello">
-            <view class="title">
-                您好 游客。
-            </view>
-            <view class="ul">
-                <view>这是 uni-app 带登录模板的示例App首页。</view>
-                <view>在 “我的” 中点击 “登录” 可以 “登录您的账户”</view>
-            </view>
-        </view>
-    </view>
+	<view class="content">
+		<view class="select-box">
+			<view @click="gotoPractice()" class="select-item">
+				<image class="item-img" src="../../static/img/qq.png" mode="widthFix"></image><br>
+				顺序练习
+			</view>
+			<view @click="gotoMock()" class="select-item">
+				<image class="item-img" src="../../static/img/qq.png" mode="widthFix"></image><br>
+				模拟考试
+			</view>
+			<view @click="gotoFormal()" class="select-item">
+				<image class="item-img" src="../../static/img/qq.png" mode="widthFix"></image><br>
+				正式考试
+			</view>
+		</view>
+	</view>
 </template>
 
 <script>
-    import {
-        mapState
-    } from 'vuex'
+	import {
+		mapState,
+		mapMutations
+	} from 'vuex'
 
-    export default {
-        computed: mapState(['forcedLogin', 'hasLogin', 'userName']),
-        onLoad() {
-            if (!this.hasLogin) {
-                uni.showModal({
-                    title: '未登录',
-                    content: '您未登录，需要登录后才能继续',
-                    /**
-                     * 如果需要强制登录，不显示取消按钮
-                     */
-                    showCancel: !this.forcedLogin,
-                    success: (res) => {
-                        if (res.confirm) {
-							/**
-							 * 如果需要强制登录，使用reLaunch方式
-							 */
-                            if (this.forcedLogin) {
-                                uni.reLaunch({
-                                    url: '../login/login'
-                                });
-                            } else {
-                                uni.navigateTo({
-                                    url: '../login/login'
-                                });
-                            }
-                        }
-                    }
-                });
-            }
-        }
-    }
+	export default {
+		computed: mapState(['forcedLogin', 'hasLogin', 'userName']),
+		beforeMount() {
+			console.log('main-mouted')
+			this.getDept()
+		},
+		methods: {
+			...mapMutations(['saveDeptArr']),
+			getDept() {
+				uni.request({
+					method: "GET",
+					url: this.$baseUrl + '/api/manage/getDeptNodes',
+					success: (res) => {
+						if (res.data.status == 200) {
+							console.log('获取部门信息成功')
+							this.saveDeptArr(res.data.data)
+						}
+					}
+				})
+			},
+			gotoPractice() {
+				uni.navigateTo({
+					url: '../practice/practice'
+				})
+			},
+			gotoMock() {
+				uni.navigateTo({
+					url: '../mock/mock'
+				})
+			},
+			gotoFormal() {
+				uni.navigateTo({
+					url: '../formal/formal'
+				})
+			},
+		},
+		onLoad() {
+
+		}
+	}
 </script>
 
-<style>
-    .hello {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-    }
+<style scoped>
+	.content {
+		background-color: #DEDEDE;
+	}
 
-    .title {
-        color: #8f8f94;
-        margin-top: 50px;
-    }
+	.hello {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
 
-    .ul {
-        font-size: 30px;
-        color: #8f8f94;
-        margin-top: 50px;
-    }
+	.title {
+		color: #8f8f94;
+		margin-top: 50px;
+	}
 
-    .ul>view {
-        line-height: 50px;
-    }
+	.ul {
+		font-size: 30px;
+		color: #8f8f94;
+		margin-top: 50px;
+	}
+
+	.ul>view {
+		line-height: 50px;
+	}
+
+	.select-box {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+	}
+
+	.select-item {
+		height: 230upx;
+		background-color: white;
+		border-radius: 10upx;
+		margin: 20upx 100upx;
+		padding-top: 15upx;
+	}
+
+	.item-img {
+		width: 120upx;
+	}
 </style>

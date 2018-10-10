@@ -1,8 +1,23 @@
 <template name="c3e2e1a0">
   <view class="_view data-v-729364de content">
+    <view class="_view data-v-729364de user-info">
+      <view class="_view data-v-729364de user-info-item"> 姓名：{{realName}}（{{userNum}}）
+        <image wx:if="{{sex>0}}" class="_image data-v-729364de sex-img" src="../../static/img/male.png" mode="widthFix"></image>
+        <image wx:else class="_image data-v-729364de sex-img" src="../../static/img/female.png" mode="widthFix"></image>
+      </view>
+      <view class="_view data-v-729364de user-info-item"> 院系：{{deptMap[academyId]}}/{{deptMap[gradeId]}}/{{deptMap[classId]}} </view>
+    </view>
+    <view class="_view data-v-729364de user-score">
+      <scroll-view scroll-y class="_scroll-view data-v-729364de score-scroll-box">
+        <view wx:key="item.reportId" key="{{item.reportId}}" class="_view data-v-729364de score-item-box" wx:for="{{recordsArr}}" wx:for-index="index" wx:for-item="item">
+          <view class="_view data-v-729364de time-text"> {{item.time}}-{{item.status}} </view>
+          <view class="_view data-v-729364de score-text"> 分数:{{item.score}} </view>
+          <view class="_view data-v-729364de {{item.result > 0 ? 'base-text pass-text' : 'base-text fail-text'}}"> {{item.result>0?'通过':"未通过"}} </view>
+        </view>
+      </scroll-view>
+    </view>
     <view class="_view data-v-729364de btn-row">
-      <button wx:if="{{!hasLogin}}" type="primary" class="_button data-v-729364de primary" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">登录</button>
-      <button wx:if="{{hasLogin}}" type="default" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-729364de">退出登录</button>
+      <button type="warn" bindtap="handleProxy" size="mini" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-729364de">登录</button>
     </view>
   </view>
 </template>

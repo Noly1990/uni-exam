@@ -8,8 +8,8 @@
 		</view>
         <view class="input-group">
             <view class="input-row border">
-                <text class="title">账号：</text>
-                <input type="text" v-model="account" placeholder="请输入账号">
+                <text class="title">学号：</text>
+                <input type="text" v-model="account" placeholder="请输入学号">
             </view>
             <view class="input-row">
                 <text class="title">密码：</text>
@@ -20,7 +20,7 @@
             <button type="primary" class="primary" @tap="bindLogin">登录</button>
         </view>
         <view class="action-row">
-            <navigator url="../reg/reg">注册账号</navigator>
+            <navigator url="../reg/reg">考生注册</navigator>
             <text>|</text>
             <navigator url="../pwd/pwd">忘记密码</navigator>
         </view>
@@ -60,10 +60,10 @@
                  * 客户端对账号信息进行一些必要的校验。
                  * 实际开发中，根据业务需要进行处理，这里仅做示例。
                  */
-                if (this.account.length < 5) {
+                if (this.account.length < 4) {
                     uni.showToast({
                         icon: 'none',
-                        title: '账号最短为 5 个字符'
+                        title: '账号最短为 4 个字符'
                     });
                     return;
                 }
@@ -79,36 +79,23 @@
                  * 检测用户账号密码是否在已注册的用户列表中
                  * 实际开发中，使用 uni.request 将账号信息发送至服务端，客户端在回调函数中获取结果信息。
                  */
-                const data = {
-                    account: this.account,
-                    password: this.password
-                };
-                const validUser = service.getUsers().some(function (user) {
-                    return data.account === user.account && data.password === user.password;
-                });
-                if (validUser) {
-                    this.toMain(this.account);
-                } else {
-                    uni.showToast({
-                        icon: 'none',
-                        title: '用户账号或密码不正确',
-                    });
-                }
-            },
-            toMain(userName) {
-                this.login(userName);
-                /**
-                 * 强制登录时使用reLaunch方式跳转过来
-				 * 返回首页也使用reLaunch方式
-                 */
-                if (this.forcedLogin) {
-                    uni.reLaunch({
-                        url: '../main/main',
-                    });
-                } else {
-                    uni.navigateBack();
-                }
-
+                uni.request({
+					method:"POST",
+                	url:'http://118.25.96.162:8080/api/login',
+					data:{
+						userName:this.account,
+						password:this.password
+					},
+					success:function(res){
+						console.log(res.data.status)
+						if (res.data.status == 200) {
+							this.login(res.data.data)
+							uni.reLaunch({
+								url: '../main/main',
+							});
+						}
+					}.bind(this)
+                })
             }
         },
         onLoad() {

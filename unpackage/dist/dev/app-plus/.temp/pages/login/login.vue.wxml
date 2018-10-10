@@ -8,8 +8,8 @@
     </view>
     <view class="_view data-v-5d6a0a76 input-group">
       <view class="_view data-v-5d6a0a76 input-row border">
-        <text class="_text data-v-5d6a0a76 title">账号：</text>
-        <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="请输入账号" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-5d6a0a76" />
+        <text class="_text data-v-5d6a0a76 title">学号：</text>
+        <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="请输入学号" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-5d6a0a76" />
       </view>
       <view class="_view data-v-5d6a0a76 input-row">
         <text class="_text data-v-5d6a0a76 title">密码：</text>
@@ -20,7 +20,7 @@
       <button type="primary" class="_button data-v-5d6a0a76 primary" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">登录</button>
     </view>
     <view class="_view data-v-5d6a0a76 action-row">
-      <navigator url="../reg/reg" class="_navigator data-v-5d6a0a76">注册账号</navigator>
+      <navigator url="../reg/reg" class="_navigator data-v-5d6a0a76">考生注册</navigator>
       <text class="_text data-v-5d6a0a76">|</text>
       <navigator url="../pwd/pwd" class="_navigator data-v-5d6a0a76">忘记密码</navigator>
     </view>

@@ -1,7 +1,7 @@
 {
     "name" : "uni-exam",
     "appid" : "__UNI__6B90F36",
-    "description" : "登录模板",
+    "description" : "一款在线考试APP",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "app-plus" : {
@@ -40,6 +40,11 @@
             "ios" : {},
             /* ios打包配置 */
             "sdkConfigs" : {}
+        },
+        "splashscreen" : {
+            "autoclose" : true,
+            "waiting" : true,
+            "delay" : 2000
         }
     },
     /* SDK配置 */
