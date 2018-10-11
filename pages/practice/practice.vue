@@ -172,7 +172,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.practice-box {
 		position: relative;
 		width: 100%;

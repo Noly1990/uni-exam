@@ -1,8 +1,9 @@
+@import "../../common/vendor.wxss";
 
-.content.data-v-59eef251 {
+.content.data-v-2512d08f {
   background-color: #DEDEDE;
 }
-.hello.data-v-59eef251 {
+.hello.data-v-2512d08f {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -14,19 +15,19 @@
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-.title.data-v-59eef251 {
+.title.data-v-2512d08f {
   color: #8f8f94;
   margin-top: 50rpx;
 }
-.ul.data-v-59eef251 {
+.ul.data-v-2512d08f {
   font-size: 30rpx;
   color: #8f8f94;
   margin-top: 50rpx;
 }
-.ul>view.data-v-59eef251 {
+.ul>view.data-v-2512d08f {
   line-height: 50rpx;
 }
-.select-box.data-v-59eef251 {
+.select-box.data-v-2512d08f {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -36,13 +37,13 @@
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-.select-item.data-v-59eef251 {
+.select-item.data-v-2512d08f {
   height: 230rpx;
   background-color: white;
   border-radius: 10rpx;
   margin: 20rpx 100rpx;
   padding-top: 15rpx;
 }
-.item-img.data-v-59eef251 {
+.item-img.data-v-2512d08f {
   width: 120rpx;
 }

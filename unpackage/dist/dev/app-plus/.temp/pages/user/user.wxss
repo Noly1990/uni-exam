@@ -1,12 +1,13 @@
+@import "../../common/vendor.wxss";
 
-.content.data-v-729364de {
+.content.data-v-dc4ba862 {
   background-color: #DEDEDE;
 }
-.score-scroll-box.data-v-729364de {
+.score-scroll-box.data-v-dc4ba862 {
   height: 600rpx;
   background-color: #EEEEEE;
 }
-.user-info.data-v-729364de {
+.user-info.data-v-dc4ba862 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -15,10 +16,10 @@
   -webkit-flex-direction: column;
   flex-direction: column;
 }
-.user-info-item.data-v-729364de:first-of-type {
+.user-info-item.data-v-dc4ba862:first-of-type {
   margin-top: 10rpx;
 }
-.user-info-item.data-v-729364de {
+.user-info-item.data-v-dc4ba862 {
   height: 90rpx;
   background-color: #FAFAFA;
   margin-bottom: 10rpx;
@@ -26,32 +27,32 @@
   padding-left: 40rpx;
   font-size: 26rpx;
 }
-.sex-img.data-v-729364de {
+.sex-img.data-v-dc4ba862 {
   display: block;
   height: 50rpx;
   width: 50rpx;
   padding: 20rpx;
   float: right;
 }
-.score-item-box.data-v-729364de {
+.score-item-box.data-v-dc4ba862 {
   margin: 20rpx;
   font-size: 24rpx;
   padding: 10rpx 15rpx;
   background-color: #FFFFFF;
   border-radius: 10rpx;
 }
-.base-text.data-v-729364de {
+.base-text.data-v-dc4ba862 {
   position: relative;
   top: -30rpx;
   font-weight: bold;
   float: right;
 }
-.pass-text.data-v-729364de {
+.pass-text.data-v-dc4ba862 {
   color: #71FF73;
 }
-.fail-text.data-v-729364de {
+.fail-text.data-v-dc4ba862 {
   color: #FF5959;
 }
-.time-text.data-v-729364de {
+.time-text.data-v-dc4ba862 {
   color: #C8C7CC;
 }

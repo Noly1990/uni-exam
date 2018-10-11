@@ -121,6 +121,7 @@
 
 
         })
+        var ZOOM = 13
         window.__openLocation__ = function (params) {
             var mapElem = document.getElementById('map');
             var poiNameElem = document.querySelector('.poi-name');
@@ -134,7 +135,7 @@
             var point = new plus.maps.Point(longitude, latitude);
             var map = plus.maps.create('map', {
                 center: point,
-                zoom: scale || 18,
+                zoom: scale || ZOOM,
                 top: 0,
                 left: 0,
                 width: '100%',
@@ -142,7 +143,7 @@
 
             });
             var marker = new plus.maps.Marker(point);
-            marker.setIcon('__uniappmarker.png');
+            marker.setIcon('__uniappmarker@3x.png');
             if (name) {
                 poiNameElem.innerText = name;
                 // marker.setLabel(name);

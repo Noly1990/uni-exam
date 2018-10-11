@@ -1,15 +1,15 @@
-<template name="1fe6bc22">
-  <view class="_view data-v-dc11c714 bottom-view-box {{[isOpen ? 'view-open' : '']}}">
-    <view bindtap="handleProxy" class="_view data-v-dc11c714 bottom-view-header" data-eventid="{{'0'}}" data-comkey="{{$k}}">
-      <text class="_text data-v-dc11c714 bottom-view-header-right-text">{{doneCount}}/{{count}}</text>
-      <view class="_view data-v-dc11c714 bottom-view-header-right">
-        <image class="_image data-v-dc11c714 bottom-view-header-right-icon" src="../../static/img/toge.png" mode="aspectFit"></image>
+<template name="641d7436">
+  <view class="_view data-v-a4025798 bottom-view-box {{[isOpen ? 'view-open' : '']}}">
+    <view bindtap="handleProxy" class="_view data-v-a4025798 bottom-view-header" data-eventid="{{'HIj-0'}}" data-comkey="{{$k}}">
+      <text class="_text data-v-a4025798 bottom-view-header-right-text">{{doneCount}}/{{count}}</text>
+      <view class="_view data-v-a4025798 bottom-view-header-right">
+        <image class="_image data-v-a4025798 bottom-view-header-right-icon" src="../../static/img/toge.png" mode="aspectFit"></image>
       </view>
     </view>
-    <view class="_view data-v-dc11c714 bottom-view-content">
-      <scroll-view scroll-y class="_scroll-view data-v-dc11c714 scroll-box" bindscrolltolower="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
-        <view class="_view data-v-dc11c714 item-box">
-          <view bindtap="handleProxy" class="_view data-v-dc11c714 scroll-item default-item {{indexClassMap[item + 1]}}" wx:key="item" key="{{item}}" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{count}}" wx:for-index="index" wx:for-item="item">
+    <view class="_view data-v-a4025798 bottom-view-content">
+      <scroll-view scroll-y class="_scroll-view data-v-a4025798 scroll-box" bindscrolltolower="handleProxy" data-eventid="{{'nBZ-2'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-a4025798 item-box">
+          <view bindtap="handleProxy" class="_view data-v-a4025798 scroll-item default-item {{indexClassMap[item + 1]}}" wx:key="item" key="{{item}}" data-eventid="{{'SGC-1-'+index}}" data-comkey="{{$k}}" wx:for="{{count}}" wx:for-index="index" wx:for-item="item">
           {{item+1}} </view>
         </view>
       </scroll-view>

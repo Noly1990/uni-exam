@@ -1,7 +1,7 @@
 <template>
 	<view class="question-box">
 		<view class="question-title">
-			<!-- <text class="title-index">第{{questionObj.qindex}}题：</text> -->
+			<text class="title-index">第{{questionObj.qindex}}题：</text>
 			<text>{{questionObj.qtitle}}</text>
 		</view>
 		<view class="answer-box">
@@ -228,7 +228,11 @@
 					})
 						break;
 					case 'mock':
-					
+					QCBus.$emit('mark-done',{
+						index:index
+					})
+					this.markDone(index)
+					this.$exam.markDone(this.qid,index)
 						break;
 					case 'exam':
 					
@@ -270,6 +274,7 @@
 		margin: 0 auto;
 		padding: 20upx;
 		margin-bottom: 120upx;
+		clear: both;
 	}
 	.question-title {
 		min-height: 100upx;

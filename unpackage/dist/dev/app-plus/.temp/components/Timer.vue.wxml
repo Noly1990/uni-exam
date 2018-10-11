@@ -1,0 +1,6 @@
+<template name="b0806d40">
+  <view class="_view data-v-79d845b1 timer-box">
+    <view class="_view data-v-79d845b1 date-time"> {{dateString}} </view>
+    <view class="_view data-v-79d845b1 count-time"> {{minute}}:{{second}} </view>
+  </view>
+</template>

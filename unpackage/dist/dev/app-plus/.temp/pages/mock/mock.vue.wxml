@@ -1,3 +1,16 @@
-<template name="1cf59e90">
-  <view class="_view data-v-459d5cf1"> mock </view>
+<import src="/components/Timer.vue.wxml" />
+<import src="/components/Question.vue.wxml" />
+<import src="/components/BottomView.vue.wxml" />
+<template name="6d1305a0">
+  <view class="_view data-v-10c13b2f practice-box">
+    <template data="{{...$root['0'], ...$root[$kk+'jkc-0'],$root}}" is="b0806d40"></template>
+    <template scene="mock" data="{{...$root['0'], ...$root[$kk+'SCy-1'],$root}}" is="78e76e9b"></template>
+    <view bindtap="handleProxy" class="_view data-v-10c13b2f controller-left" data-eventid="{{'FyQ-0'}}" data-comkey="{{$k}}">
+      <image class="_image data-v-10c13b2f left-img" src="../../static/img/left.png" mode="aspectFit"></image>
+    </view>
+    <view bindtap="handleProxy" class="_view data-v-10c13b2f controller-right" data-eventid="{{'Ech-1'}}" data-comkey="{{$k}}">
+      <image class="_image data-v-10c13b2f right-img" src="../../static/img/right.png" mode="aspectFit"></image>
+    </view>
+    <template bindreach-bottom="handleProxy" bindindex-click="handleProxy" data-eventid="{{'InS-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'m2l-2'],$root}}" is="641d7436"></template>
+  </view>
 </template>

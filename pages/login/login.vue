@@ -147,7 +147,7 @@
 	
 	.title-img {
 		width: 80%;
-		height: 150px;
+		height: 180px;
 	}
 	.title-text {
 		color: white;

@@ -1,2 +1,5 @@
 <import src="/components/Question.vue.wxml" />
 <import src="/components/BottomView.vue.wxml" />
+<import src="/components/Timer.vue.wxml" />
+<import src="/components/Question.vue.wxml" />
+<import src="/components/BottomView.vue.wxml" />

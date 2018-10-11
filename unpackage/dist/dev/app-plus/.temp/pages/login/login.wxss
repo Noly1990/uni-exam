@@ -1,3 +1,4 @@
+@import "../../common/vendor.wxss";
 
 .action-row {
   display: -webkit-box;
@@ -49,7 +50,7 @@
 }
 .title-img {
   width: 80%;
-  height: 150rpx;
+  height: 180rpx;
 }
 .title-text {
   color: white;

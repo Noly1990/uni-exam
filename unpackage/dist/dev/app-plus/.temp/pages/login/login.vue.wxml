@@ -1,28 +1,28 @@
-<template name="0f6271ac">
-  <view class="_view data-v-5d6a0a76 content">
-    <view class="_view data-v-5d6a0a76 main-title">
-      <image class="_image data-v-5d6a0a76 title-img" src="../../static/img/title.png" mode></image>
-      <view class="_view data-v-5d6a0a76 title-text">
-        <text class="_text data-v-5d6a0a76">安全教育考试系统</text>
+<template name="1c0d9898">
+  <view class="_view data-v-62f04183 content">
+    <view class="_view data-v-62f04183 main-title">
+      <image class="_image data-v-62f04183 title-img" src="../../static/img/title.png" mode></image>
+      <view class="_view data-v-62f04183 title-text">
+        <text class="_text data-v-62f04183">安全教育考试系统</text>
       </view>
     </view>
-    <view class="_view data-v-5d6a0a76 input-group">
-      <view class="_view data-v-5d6a0a76 input-row border">
-        <text class="_text data-v-5d6a0a76 title">学号：</text>
-        <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="请输入学号" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-5d6a0a76" />
+    <view class="_view data-v-62f04183 input-group">
+      <view class="_view data-v-62f04183 input-row border">
+        <text class="_text data-v-62f04183 title">学号：</text>
+        <input type="text" value="{{account}}" bindinput="handleProxy" placeholder="请输入学号" data-eventid="{{'4sm-0'}}" data-comkey="{{$k}}" class="_input data-v-62f04183" />
       </view>
-      <view class="_view data-v-5d6a0a76 input-row">
-        <text class="_text data-v-5d6a0a76 title">密码：</text>
-        <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-5d6a0a76" />
+      <view class="_view data-v-62f04183 input-row">
+        <text class="_text data-v-62f04183 title">密码：</text>
+        <input type="text" password="true" value="{{password}}" bindinput="handleProxy" placeholder="请输入密码" data-eventid="{{'hBS-1'}}" data-comkey="{{$k}}" class="_input data-v-62f04183" />
       </view>
     </view>
-    <view class="_view data-v-5d6a0a76 btn-row">
-      <button type="primary" class="_button data-v-5d6a0a76 primary" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">登录</button>
+    <view class="_view data-v-62f04183 btn-row">
+      <button type="primary" class="_button data-v-62f04183 primary" bindtap="handleProxy" data-eventid="{{'xxK-2'}}" data-comkey="{{$k}}">登录</button>
     </view>
-    <view class="_view data-v-5d6a0a76 action-row">
-      <navigator url="../reg/reg" class="_navigator data-v-5d6a0a76">考生注册</navigator>
-      <text class="_text data-v-5d6a0a76">|</text>
-      <navigator url="../pwd/pwd" class="_navigator data-v-5d6a0a76">忘记密码</navigator>
+    <view class="_view data-v-62f04183 action-row">
+      <navigator url="../reg/reg" class="_navigator data-v-62f04183">考生注册</navigator>
+      <text class="_text data-v-62f04183">|</text>
+      <navigator url="../pwd/pwd" class="_navigator data-v-62f04183">忘记密码</navigator>
     </view>
   </view>
 </template>

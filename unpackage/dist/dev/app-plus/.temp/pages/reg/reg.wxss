@@ -1,3 +1,4 @@
+@import "../../common/vendor.wxss";
 
 .picker-item {
   text-align: center;

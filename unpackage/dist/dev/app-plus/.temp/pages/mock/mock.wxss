@@ -1,0 +1,45 @@
+@import "../../common/vendor.wxss";
+
+.practice-box.data-v-10c13b2f {
+  position: relative;
+  width: 100%;
+}
+.controller-left.data-v-10c13b2f {
+  position: fixed;
+  left: 10rpx;
+  top: 65%;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #DDD;
+  border-radius: 50%;
+}
+.controller-right.data-v-10c13b2f {
+  position: fixed;
+  right: 10rpx;
+  top: 65%;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #DDD;
+  border-radius: 50%;
+}
+.left-img.data-v-10c13b2f {
+  width: 100rpx;
+  height: 100rpx;
+}
+.right-img.data-v-10c13b2f {
+  width: 100rpx;
+  height: 100rpx;
+}
+.timer-box {
+  margin: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.date-time {
+  float: left;
+}
+.count-time {
+  float: right;
+  color: red;
+  font-weight: bold;
+}
